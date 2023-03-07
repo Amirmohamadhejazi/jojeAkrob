@@ -1,0 +1,15 @@
+@font-face {
+    font-family: YekanBakhBold ;
+    font-style: normal;
+     src: url('../FontStyle/YekanBakhFaNum06Bold.ttf');
+}
+@font-face {
+    font-family: YekanBakhRegular ;
+    font-style: normal;
+     src: url('../FontStyle/YekanBakhFaNum04Regular.ttf');
+}
+@font-face {
+    font-family: YekanBakhlight ;
+    font-style: normal;
+     src: url('../FontStyle/YekanBakhFaNum03Light.ttf');
+}

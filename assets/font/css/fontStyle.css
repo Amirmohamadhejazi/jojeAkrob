@@ -1,0 +1,17 @@
+@import url(font.css);
+body {
+    font-family: YekanBakhRegular !important;
+    margin: 0;
+}
+.YekanBakhBold{
+    font-family: YekanBakhBold!important ;
+}
+.YekanBakhRegular{
+    font-family: YekanBakhRegular!important ;
+}
+.YekanBakhlight{
+    font-family: YekanBakhlight!important ;
+}
+
+
+ 
