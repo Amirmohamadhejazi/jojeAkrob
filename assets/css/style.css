@@ -57,7 +57,6 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   overflow-x: hidden;
-  font-family: var(--body-font);
 }
 
 * {
@@ -73,7 +72,6 @@ html {
 body {
   margin: 0;
   color: var(--paragraph-color);
-  font-family: var(--body-font);
   line-height: var(--line-height30);
   font-size: var(--body-font-size);
   background-color: #faf7f2;
@@ -116,7 +114,6 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
-  font-family: var(--heading-font);
   font-weight: 600;
 }
 
@@ -242,7 +239,6 @@ code {
   position: absolute;
   left: 0;
   top: 0;
-  font-family: "fontawesome";
   content: "";
   color: var(--main-color);
 }
@@ -791,7 +787,6 @@ ul {
 }
 .section-title .sub-title {
   color: var(--main-color);
-  font-family: var(--satisfy-font);
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -2017,7 +2012,6 @@ ul.side-navbar-items li a:hover {
   position: absolute;
   left: 17px;
   top: 10px;
-  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
   visibility: hidden;
@@ -2053,7 +2047,6 @@ ul.side-navbar-items li a:hover {
   position: absolute;
   right: 15px;
   top: 50%;
-  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
   /* IE 9 */
@@ -2108,7 +2101,6 @@ ul.side-navbar-items li a:hover {
   right: -14px;
   top: 50%;
   content: "";
-  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -2181,7 +2173,6 @@ ul.side-navbar-items li a:hover {
   position: absolute;
   left: 17px;
   top: 10px;
-  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
   visibility: hidden;
@@ -2234,7 +2225,6 @@ ul.side-navbar-items li a:hover {
   right: 15px;
   top: 50%;
   content: "";
-  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   /* IE 9 */
   -webkit-transform: translateY(-50%);
@@ -2785,7 +2775,6 @@ ul.side-navbar-items li a:hover {
 }
 .banner-inner h3 {
   color: var(--secondary-color);
-  font-family: var(--satisfy-font);
   font-weight: 400;
   margin-bottom: 4px;
 }
@@ -2794,7 +2783,6 @@ ul.side-navbar-items li a:hover {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-size: 86px;
-  font-family: var(--bebas-font);
   font-weight: 400;
   line-height: 92px;
   margin-bottom: 20px;
@@ -2931,7 +2919,6 @@ ul.side-navbar-items li a:hover {
   font-size: 68px;
   font-weight: 700;
   color: #fff;
-  font-family: "Quattrocento", serif;
   line-height: 72px;
   margin-bottom: 8px;
 }
@@ -3187,7 +3174,6 @@ ul.side-navbar-items li a:hover {
 }
 .testimonial-wrap h3 {
   font-size: 32px;
-  font-family: var(--satisfy-font);
   font-weight: 400;
   margin: 30px 0 10px;
 }
@@ -3881,7 +3867,6 @@ ul.side-navbar-items li a:hover {
 }
 .peyment-method ul li .form-check .form-check-input:checked[type=radio]:after {
   content: "";
-  font-family: remixicon !important;
   color: #fff;
   display: block;
   text-align: center;
@@ -4300,7 +4285,6 @@ ul.side-navbar-items li a:hover {
   color: var(--main-color);
 }
 .banner-area-2 .banner-inner h1 {
-  font-family: var(--heading-font);
   font-size: 56px;
   font-weight: 600;
   line-height: 70px;
@@ -4445,7 +4429,6 @@ ul.side-navbar-items li a:hover {
 .single-offer-wrap.single-offer-wrap-2 h4 {
   font-size: 56px;
   font-weight: 400;
-  font-family: var(--satisfy-font);
   margin-bottom: -15px;
 }
 .single-offer-wrap.single-offer-wrap-2 h1 {
@@ -4509,7 +4492,6 @@ ul.side-navbar-items li a:hover {
   color: var(--secondary-color);
   font-size: 24px;
   font-weight: 400;
-  font-family: var(--satisfy-font);
   margin-bottom: 0;
 }
 .single-offer-wrap.single-offer-wrap-5 .wrap-details h3 {
