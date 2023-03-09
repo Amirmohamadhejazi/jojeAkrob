@@ -4,7 +4,7 @@
 <!-- Mirrored from themefie.com/html/foodka/home-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Mar 2023 06:17:11 GMT -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FoodKa - Food Ordering, Delivery & Restuarent Template</title>
     <!--fivicon icon-->
@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&amp;family=Bebas+Neue&amp;family=Satisfy&amp;family=Quattrocento:wght@400;700&amp;display=swap" rel="stylesheet">
 
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class='sc5'>
     <!-- preloader area start -->
@@ -99,35 +99,28 @@
             </div>
         </nav>
     </header>
-    <!-- navbar end -->
-
-    <!-- Banner Area Start-->
-    <section class="banner-area">
-        <div class="banner-thumb">
-            <img src="assets/img/banner/banner.png" alt="img">
-        </div>
-        <div class="banner-bg-img"></div>
-        <div class="banner-shape-1"><img src="assets/img/banner/shape-1.png" alt="img"></div>
-        <div class="banner-shape-2"><img src="assets/img/banner/shape-2.png" alt="img"></div>
-
-    </section>
     <!-- Slider main container -->
     <section>
         <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
-        centered-slides="true" autoplay-delay="2500" >
-            <swiper-slide>
+                          centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false" >
+            <swiper-slide class="w-100">
                 <div class="imgSlider">
-                    <img src="./assets/img/chicken1.jpg" width="100%" height="100%" alt="chik1">
+                    <img src="./assets/img/slider1.jpg" class="img_100" alt="chik1">
                 </div>
             </swiper-slide>
             <swiper-slide>
                 <div class="imgSlider">
-                    <img src="./assets/img/chicken2.jpg" width="100%" height="100%" alt="chik2">
+                    <img src="./assets/img/chicken1.jpg" class="img_100" alt="chik1">
                 </div>
             </swiper-slide>
             <swiper-slide>
                 <div class="imgSlider">
-                    <img src="./assets/img/chicken3.jpg" width="100%" height="100%" alt="chik3">
+                    <img src="./assets/img/chicken2.jpg" class="img_100" alt="chik2">
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="imgSlider">
+                    <img src="./assets/img/chicken3.jpg" class="img_100" alt="chik3">
                 </div>
             </swiper-slide>
         </swiper-container>
@@ -137,7 +130,7 @@
     <section>
         <div class="box_History">
             <h2 class="text-right">تاریخچه اکبر جوجه</h2>
-            <div class="d-flex flex-row justify-content-between">
+            <div class="flex_row_column_mobile">
                 <div class="box_History_Items">
                     <video src="./assets/video/akbar.mp4" width="100%" height="100%" controls muted></video>
                 </div>
@@ -152,10 +145,10 @@
     <section>
         <div class="box_Branch">
             <h2 class="text-right">شبعات اصلی اکبر جوجه</h2>
-            <div class="d-flex flex-row justify-content-between  text-white">
+            <div class=" flex_row_column_mobile   text-white">
                 
                 <div class="box_Branch_Items flex-center position-relative">
-                    <img src="./assets/img/akbarghaemShahr.jpg.crdownload" style="width: 100%;height: 100%;object-fit: cover;" alt="">    
+                    <img src="./assets/img/akbarghaemshahr.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                     <span class="textBranches">شعبه قائم شهر</span>
                 </div>
                 
