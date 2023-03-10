@@ -316,7 +316,11 @@
 
 
 
-function gotoBranches(){
-    console.log("redirected")
+function homeToBranches(){
+
     window.location.href = "./cmp/branches.html";
+}
+
+function gotoBranches(e){
+    window.location.href = "./branches.html";
 }
