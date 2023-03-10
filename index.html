@@ -25,7 +25,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body class='sc5'>
+<body class='sc5 container '>
     <!-- preloader area start -->
     <div class="preloader" id="preloader">
         <div class="preloader-inner">
@@ -49,51 +49,54 @@
             <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
         </form>
     </div>
-    <header class="navbar-area">
-        <nav class="navbar navbar-expand-lg bg_nav">
-            <div class="responsive-mobile-menu">
-                <button class="menu toggle-btn d-block d-lg-none" data-target="#themefie_main_menu" 
-                aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-left"></span>
-                    <span class="icon-right"></span>
-                </button>
-            </div>
-            <div class="container nav-container">
-                <div class="d-flex flex-row">
-                    <div class="logo margin_mobile_logo">
-                        <a class="main-logo" href="home-1.html"><img src="assets/img/logoAkbar.png" alt="img"></a>
-                    </div>   
-                     <div class="collapse navbar-collapse " id="themefie_main_menu">
-                        <ul class="navbar-nav menu-open">
-                            <li>
-                                <a href="#">اکبر جوجه</a>
-                            </li>
-                            <li class="current-menu-item menu-item-has-children">
-                                <a href="#">شعب اکبر جوجه</a>
-                                <ul class="sub-menu ps-0" style="text-align: right;">
-                                    <li><a href="index1.html">اکبر جوجه تهران</a></li>
-                                    <li><a href="index2.html">اکبر جوجه ساری</a></li>
-                                    <li><a href="index3.html">اکبر جوجه قائم‌شهر</a></li>
-                                </ul>
-                            </li>
-                            
-                            
-                            <li>
-                                <a href="about.html">بلاگ</a>
-                            </li>
-                            <li>
-                                <a href="contact.html"> گالری تصاویر</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">ارتباط با ما</a>
-                            </li>
-                        </ul>
-                    </div>     
-                </div>                             
-                <a class="search" href="#"><i class="ri-search-line"></i></a></li>
-            </div>
-        </nav>
-    </header>
+    <div class=" navHeader">
+        <div class="navbar-area container ">
+            <nav class="navbar navbar-expand-lg bg_nav">
+                <div class="responsive-mobile-menu">
+                    <button class="menu toggle-btn d-block d-lg-none" data-target="#themefie_main_menu"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-left"></span>
+                        <span class="icon-right"></span>
+                    </button>
+                </div>
+                <div class="d-flex align-items-center nav-container margin_mobile_logo">
+                    <div class="d-flex flex-row ">
+                        <div class="logo">
+                            <a class="main-logo " href="#"><img src="assets/img/logoAkbar.png" alt="img"></a>
+                        </div>
+                        <div class="collapse navbar-collapse " id="themefie_main_menu">
+                            <ul class="navbar-nav menu-open">
+                                <li>
+                                    <a href="#">اکبر جوجه</a>
+                                </li>
+                                <li class="current-menu-item menu-item-has-children">
+                                    <a href="#">شعب اکبر جوجه</a>
+                                    <ul class="sub-menu ps-0" style="text-align: right;">
+                                        <li><a href="./cmp/index1.html">اکبر جوجه تهران</a></li>
+                                        <li><a href="./cmp/index2.html">اکبر جوجه ساری</a></li>
+                                        <li><a href="./cmp/index3.html">اکبر جوجه قائم‌شهر</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="./cmp/about.html">بلاگ</a>
+                                </li>
+                                <li>
+                                    <a href="#galleryPic"> گالری تصاویر</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">ارتباط با ما</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--                    <a class="search" href="#"><i class="ri-search-line"></i></a></li>-->
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
     <!-- Slider main container -->
     <section>
         <swiper-container class="mySwiper"  navigation="true" space-between="30" dir="ltr"
@@ -127,7 +130,7 @@
             <h2 class="text-right">تاریخچه اکبر جوجه</h2>
             <div class="flex_row_column_mobile">
                 <div class="box_History_Items flex-center">
-                    <h5>اکبر واقع در اکبر دره </h5>     
+                    <span class="textJustify" style="width: 90%"> اکبر واقع در اکبر دره که بود: اکبر پسری از محله ی اکبر دره بود ک واقع در دره ای به نام اکبر بود ... اکبر ب این دلیل همیشه در دره های اکبر دره بود. از اونجا بود که اکبر همیشه در ماه های اکبر نژاد نگاه میکرد و اسم او را هم به دلیل شباهت صورتش به ماه انتخاب کردن .. از اونجا شد اکبر اکبر دره در اکبری در دره ی خویش ... تا داستانی دیگر بد رود __</span>
                 </div>
                 <div class="box_History_Items">
                     <video src="./assets/video/akbar.mp4" width="100%" height="100%" controls muted></video>
@@ -139,7 +142,7 @@
     <section>
         <div class="box_Branch">
             <h2 class="text-right">شبعات اصلی اکبر جوجه</h2>
-            <div class=" flex_row_column_mobile   text-white">
+            <div class="w-100 flex_row_column_mobile text-white">
                 
                 <div class="box_Branch_Items flex-center position-relative">
                     <img src="./assets/img/akbarghaemshahr.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
@@ -195,8 +198,8 @@
         <div class="honors_box">
             <h2 class="text-right">تالار افتخارات اکبر جوجه</h2>
             <div class="flex_row_column_mobile flex-center text-center">
-                <div class="honors_box_Item1">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quia explicabo autem magni placeat, voluptatum consequatur maiores assumenda nam odio, blanditiis repudiandae reiciendis nobis neque veritatis est tempora, quod unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aut libero est vitae recusandae exercitationem repudiandae unde ex impedit commodi consectetur porro, praesentium vero error debitis neque quisquam eius perferendis!
+                <div class="honors_box_Item1 flex-center text-right">
+                    <span class="textJustify" style="width: 90%">تالار همیشه جزوی از افتخارات اکبر دره بود و از آنجایی که وی اکبر جوجه را زد نامش در جامعه ی ایران و ایرانی پخش و فیمس شد</span>
                 </div>
                 <div class="honors_box_Item2 flex-center">
                     <img src="./assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
@@ -208,19 +211,19 @@
         <div class="gallery_comments_box">
             <h2 class="text-right">نظرات کاربران</h2>
             <div class="flex_row_column_mobile flex-center text-center">
-                <div class="flex-column">
+                <div class="flex-column d-flex align-items-center">
                     <div class="gallery_comments_box_Items flex-center position-relative">
                         <img src="./assets/img/manProf1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
                     </div>
                     <span>ایول</span>
                 </div>
-                <div class="flex-column">
+                <div class="flex-column d-flex align-items-center">
                     <div class="gallery_comments_box_Items flex-center position-relative">
                         <img src="./assets/img/manProf2.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
                     </div>
-                    <span>آقا </span>
+                    <span>آقا عالی</span>
                 </div>
-                <div class="flex-column">
+                <div class="flex-column d-flex align-items-center">
                     <div class="gallery_comments_box_Items flex-center position-relative">
                         <img src="./assets/img/manProf3.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
                     </div>
@@ -230,25 +233,25 @@
         </div>
     </section>
     <section>
-        <div class="gallery_comments_box">
+        <div class="gallery_comments_box" id="galleryPic">
             <h2 class="text-right">گالری تصاویر</h2>
             <div class="flex_row_column_mobile flex-center text-center">
-                <div class="flex-column">
+                <div class="d-flex justify-content-center">
                     <div class="gallery_comments_box_Items flex-center position-relative">
                         <img src="./assets/img/gallery1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
                     </div>
                 </div>
-                <div class="flex-column">
+                <div class="d-flex justify-content-center">
                     <div class="gallery_comments_box_Items flex-center position-relative">
                         <img src="./assets/img/gallery2.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
                     </div>
                 </div>
-                <div class="flex-column">
+                <div class="d-flex justify-content-center">
                     <div class="gallery_comments_box_Items flex-center position-relative">
                         <img src="./assets/img/gallery3.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
                     </div>
                 </div>
-                <div class="flex-column">
+                <div class="d-flex justify-content-center">
                     <div class="gallery_comments_box_Items flex-center position-relative">
                         <img src="./assets/img/gallery4.png" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
                     </div>

@@ -190,7 +190,7 @@
           var l = -(x - w) / (w / 1) - 1;
           var t = -(y - h) / (h / 1) - 1;
               //10 / (y - (h / 2)) * 10;             
-          console.log(y + ' | ' + h + ' | ' + t);
+          // console.log(y + ' | ' + h + ' | ' + t);
           
             TweenMax.to($('.banner-bg-img'), 1, {
                 top: t + "%",

@@ -6,7 +6,9 @@ body{
 .text-right {
     text-align: right;
 }
-
+.textJustify{
+    text-align: justify;
+}
 .flex-center {
     display: flex;
     justify-content: center;
@@ -76,7 +78,9 @@ li:hover {
     object-fit: cover;
 }
 
-
+.margin_mobile_logo{
+    margin-right: 20px;
+}
 /* ************************************ box */
 
 .honors_box , .possibilities_box , .box_Branch , .box_History , .gallery_comments_box{
@@ -163,17 +167,40 @@ li:hover {
     height: 10rem;
     background-color: bisque;
 }
-
+.container{
+    padding: 0!important;
+}
 @media only screen and (max-width: 992px) {
     .margin_mobile_logo {
-        margin-right: 10%;
+        margin-right: 7%;
     }
 
-    .box_Branch , .box_History {
-        align-items: center;
-    }
+    /*.box_Branch , .box_History .possibilities_box{*/
+    /*    align-items: center;*/
+    /*}*/
     .flex_row_column_mobile {
         flex-direction: column;
+    }
+
+    .box_History_Items {
+        width: 100%;
+    }
+
+    .box_History {
+        margin: 0;
+    }
+    .honors_box , .possibilities_box , .box_Branch , .box_History , .gallery_comments_box{
+        padding: 5px;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .honors_box_Item1 , .box_Branch_Items{
+        width: 95%;
+    }
+    .gallery_comments_box_Items {
+        width: 95%;
+        height: 95%;
     }
 }
 
@@ -181,4 +208,5 @@ li:hover {
     .margin_mobile_logo {
         margin-right: 15%;
     }
+
 }
