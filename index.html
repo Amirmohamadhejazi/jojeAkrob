@@ -20,9 +20,10 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/font/css/font.css">
     <link rel="stylesheet" href="assets/font/css/fontStyle.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&amp;family=Bebas+Neue&amp;family=Satisfy&amp;family=Quattrocento:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"/>
+    <link href="assets/font/css2.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../Ip-Tracker/js/main.js"></script>
 </head>
 <body class='sc5 container '>
     <!-- preloader area start -->
@@ -69,11 +70,11 @@
                                     <a href="#">اکبر جوجه</a>
                                 </li>
                                 <li class="current-menu-item menu-item-has-children">
-                                    <a href="#">شعب اکبر جوجه</a>
+                                    <a href="./cmp/branches.html" onclick="gotoBranches()">شعب اکبر جوجه</a>
                                     <ul class="sub-menu ps-0" style="text-align: right;">
-                                        <li><a href="./cmp/index1.html">اکبر جوجه تهران</a></li>
-                                        <li><a href="./cmp/index2.html">اکبر جوجه ساری</a></li>
-                                        <li><a href="./cmp/index3.html">اکبر جوجه قائم‌شهر</a></li>
+                                        <li><a href="./cmp/tehran.html">اکبر جوجه تهران</a></li>
+                                        <li><a href="./cmp/sari.html">اکبر جوجه ساری</a></li>
+                                        <li><a href="./cmp/ghaemshahr.html">اکبر جوجه قائم‌شهر</a></li>
                                     </ul>
                                 </li>
 
@@ -141,21 +142,26 @@
         <div class="box_Branch">
             <span  class="text-right text_title_boxes">شبعات اصلی اکبر جوجه</span>
             <div class="w-100 flex_row_column_mobile text-white">
-                
-                <div class="box_Branch_Items flex-center position-relative">
-                    <img src="./assets/img/akbarghaemshahr.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                    <span class="textBranches">شعبه قائم شهر</span>
-                </div>
-                
-                <div class="box_Branch_Items flex-center position-relative">
-                    <img src="./assets/img/akbarSari.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">    
-                    <span class="textBranches">شعبه ساری</span>   
-                </div>
 
-                <div class="box_Branch_Items flex-center position-relative">
-                    <img src="./assets/img/akbarTeh.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">    
-                    <span class="textBranches">شعبه تهران</span>
-                </div>
+                <a href="./cmp/ghaemshahr.html">
+                    <div class="box_Branch_Items flex-center position-relative">
+                        <img src="./assets/img/akbarghaemshahr.jpg" style="width: 100%;height: 100%;object-fit: cover" alt="">
+                        <span class="textBranches">شعبه قائم شهر</span>
+                    </div>
+                </a>
+                <a href="./cmp/sari.html">
+                    <div class="box_Branch_Items flex-center position-relative">
+                        <img src="./assets/img/akbarSari.jpg" style="width: 100%;height: 100%;object-fit: cover" alt="">
+                        <span class="textBranches">شعبه ساری</span>
+                    </div>
+                </a>
+                <a href="./cmp/tehran.html">
+                    <div class="box_Branch_Items flex-center position-relative">
+                        <img src="./assets/img/akbarTeh.jpg" style="width: 100%;height: 100%;object-fit: cover" alt="">
+                        <span class="textBranches">شعبه تهران</span>
+                    </div>
+                </a>
+
             </div>
         </div>
     </section>
@@ -165,33 +171,33 @@
             <div class="flex_row_column_mobile flex-center text-center">
                 <div class="flex-column">
                     <div class="possibilities_box_Items flex-center position-relative">
-                        <img src="./assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
+                        <img src="./assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                     </div>
                     <span>غذایی سالم و با کیفیت</span>
                 </div>
                 <div class="flex-column">
                     <div class="possibilities_box_Items flex-center position-relative">
-                        <img src="./assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
+                        <img src="./assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                     </div>
                     <span>طبخ متفاوت جوجه</span>
                 </div>
                 <div class="flex-column">
                     <div class="possibilities_box_Items flex-center position-relative">
-                        <img src="./assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
+                        <img src="./assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                     </div>
                     <span>قدمت زیاد</span>
                 </div>
                 <div class="flex-column">
                     <div class="possibilities_box_Items flex-center position-relative">
-                        <img src="./assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
+                        <img src="./assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                     </div>
                     <span>قیمت منصفانه</span>
                 </div>
-                
+
             </div>
         </div>
     </section>
-    
+
     <section>
         <div class="honors_box">
             <span  class="text-right text_title_boxes">تالار افتخارات اکبر جوجه</span>
@@ -200,7 +206,7 @@
                     <span class="textJustify" style="width: 90%">تالار همیشه جزوی از افتخارات اکبر دره بود و از آنجایی که وی اکبر جوجه را زد نامش در جامعه ی ایران و ایرانی پخش و فیمس شد</span>
                 </div>
                 <div class="honors_box_Item2 flex-center">
-                    <img src="./assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
+                    <img src="./assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                 </div>
             </div>
         </div>
@@ -211,19 +217,19 @@
             <div class="flex_row_column_mobile flex-center text-center">
                 <div class="flex-column d-flex align-items-center">
                     <div class="gallery_comments_box_Items flex-center position-relative">
-                        <img src="./assets/img/manProf1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
+                        <img src="./assets/img/manProf1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                     </div>
                     <span>ایول</span>
                 </div>
                 <div class="flex-column d-flex align-items-center">
                     <div class="gallery_comments_box_Items flex-center position-relative">
-                        <img src="./assets/img/manProf2.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
+                        <img src="./assets/img/manProf2.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                     </div>
                     <span>آقا عالی</span>
                 </div>
                 <div class="flex-column d-flex align-items-center">
                     <div class="gallery_comments_box_Items flex-center position-relative">
-                        <img src="./assets/img/manProf3.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
+                        <img src="./assets/img/manProf3.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                     </div>
                     <span>خوبه</span>
                 </div>
@@ -236,22 +242,22 @@
             <div class="flex_row_column_mobile flex-center text-center">
                 <div class="d-flex justify-content-center">
                     <div class="gallery_comments_box_Items flex-center position-relative">
-                        <img src="./assets/img/gallery1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
+                        <img src="./assets/img/gallery1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
                     <div class="gallery_comments_box_Items flex-center position-relative">
-                        <img src="./assets/img/gallery2.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
+                        <img src="./assets/img/gallery2.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
                     <div class="gallery_comments_box_Items flex-center position-relative">
-                        <img src="./assets/img/gallery3.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
+                        <img src="./assets/img/gallery3.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
                     <div class="gallery_comments_box_Items flex-center position-relative">
-                        <img src="./assets/img/gallery4.png" style="width: 100%;height: 100%;object-fit: cover;" alt=""> 
+                        <img src="./assets/img/gallery4.png" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                     </div>
                 </div>
             </div>
@@ -278,31 +284,34 @@
             <section>
                 <div class="link_footer ">
                     <span>لینک های مفید</span>
-                    <span>لینک</span>
-                    <span>لینک</span>
-                    <span>لینک</span>
-                    <span>لینک</span>
+                    <span class="cursor_pointer">لینک</span>
+                    <span class="cursor_pointer">لینک</span>
+                    <span class="cursor_pointer">لینک</span>
+                    <span class="cursor_pointer">لینک</span>
                 </div>
             </section>
             <section>
-
                 <div class="d-flex footer_Branch_Box">
                     <span class="text-center">لیست شبعات اصلی</span>
                     <div class="w-100 flex_row_column_mobile text-white flex-wrap">
-                        <div class="footer_Branch_Items flex-center position-relative">
-                            <img src="./assets/img/akbarghaemshahr.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                            <span class="textBranches">شعبه قائم شهر</span>
-                        </div>
-
-                        <div class="footer_Branch_Items flex-center position-relative">
-                            <img src="./assets/img/akbarSari.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                            <span class="textBranches">شعبه ساری</span>
-                        </div>
-
-                        <div class="footer_Branch_Items flex-center position-relative">
-                            <img src="./assets/img/akbarTeh.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                            <span class="textBranches">شعبه تهران</span>
-                        </div>
+                        <a href="./cmp/ghaemshahr.html">
+                            <div class="footer_Branch_Items flex-center position-relative">
+                                <img src="./assets/img/akbarghaemshahr.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                                <span class="textBranches">شعبه قائم شهر</span>
+                            </div>
+                        </a>
+                        <a href="./cmp/sari.html">
+                            <div class="footer_Branch_Items flex-center position-relative">
+                                <img src="./assets/img/akbarSari.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                                <span class="textBranches">شعبه ساری</span>
+                            </div>
+                        </a>
+                        <a href="./cmp/tehran.html">
+                            <div class="footer_Branch_Items flex-center position-relative">
+                                <img src="./assets/img/akbarTeh.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                                <span class="textBranches">شعبه تهران</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </section>

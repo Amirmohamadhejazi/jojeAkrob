@@ -5,6 +5,10 @@ body{
 
 .text-right {
     text-align: right;
+
+}
+.cursor_pointer {
+    cursor: pointer;
 }
 .textJustify{
     text-align: justify;
@@ -30,7 +34,10 @@ body{
 }
 
 .bg_nav {
-    background-color: black;
+    background-color: #000000;
+    opacity: 1;
+    background-image: radial-gradient(#060608 1.9000000000000001px, #000000 1.9000000000000001px);
+    background-size: 38px 38px;
     border: 0;
 }
 
@@ -236,6 +243,9 @@ li:hover {
     padding: 0!important;
 }
 @media only screen and (max-width: 992px) {
+    .text_title_boxes {
+        font-size: 24px;
+    }
     .margin_mobile_logo {
         margin-right: 7%;
     }

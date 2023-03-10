@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact</title>
+    <title>Sari</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <link rel="icon" href="../assets/img/fevicon.png">
@@ -40,7 +40,6 @@
     }
 
     .map_box {
-        margin: 12rem 0 12rem 0;
         text-align: right;
         padding: 40px;
         width: 100%;
@@ -48,15 +47,14 @@
         display: flex;
         flex-direction: column;
     }
-    .leaflet-pane{
-        z-index: 0;
-    }
     @media only screen and (max-width: 992px) {
         .map_box {
             text-align: center;
             /*width: 95%;*/
             padding: 0;
         }
+
+
     }
 </style>
 <body class='sc5 container '>
@@ -120,10 +118,39 @@
         </nav>
     </div>
 </div>
+<section>
+    <div class="box_Branch" style="margin-top: 6rem">
+        <span  class="text-right text_title_boxes">شبعات اصلی اکبر جوجه</span>
+        <div class="w-100 flex_row_column_mobile text-white">
+            <a href="../cmp/ghaemshahr.html">
+                <div class="box_Branch_Items flex-center position-relative">
+                    <img src="../assets/img/akbarghaemshahr.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    <span class="textBranches">شعبه قائم شهر</span>
+                </div>
+            </a>
+            <a href="../cmp/sari.html">
+                <div class="box_Branch_Items flex-center position-relative">
+                    <img src="../assets/img/akbarSari.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    <span class="textBranches">شعبه ساری</span>
+                </div>
+            </a>
+            <a href="../cmp/tehran.html">
+                <div class="box_Branch_Items flex-center position-relative">
+                    <img src="../assets/img/akbarTeh.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    <span class="textBranches">شعبه تهران</span>
+                </div>
+            </a>
 
+
+
+
+
+        </div>
+    </div>
+</section>
 
 <section class="map_box">
-    <span  class=" text_title_boxes"> شعبه اصلی اکبر جوجه</span>
+    <span  class=" text_title_boxes">نزدیک ترین شعبه اکبر جوجه</span>
     <div id="map"></div>
 </section>
 
