@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sari</title>
+    <title>Sari Akbar Joje</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <link rel="icon" href="../assets/img/fevicon.png">
@@ -33,39 +33,17 @@
         height: 20rem;
         margin: 14px;
         border-radius: 10px
-
-    }
-    .leaflet-control-zoom , .leaflet-control-attribution{
-        display: none;
     }
 
-    .map_box {
-        margin: 0 0 10rem 0;
-        text-align: right;
-        padding: 40px;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .leaflet-pane{
-        z-index: 0;
-    }
-    @media only screen and (max-width: 992px) {
-        .map_box {
-            text-align: center;
-            /*width: 95%;*/
-            padding: 0;
-        }
-    }
-    .btn_map{
-        width: 300px;
-        height: 50px;
-        border: 0;
-        border-radius: 10px;
-        background-color: #bdbdbd;
-        box-shadow: 7px 7px 18px #d0d0d0,-7px -7px 18px #f0f0f0;
-    }
+    /*.map_box {*/
+    /*    margin: 0 0 10rem 0;*/
+    /*    text-align: right;*/
+    /*    padding: 40px;*/
+    /*    width: 100%;*/
+    /*    height: auto;*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*}*/
 </style>
 <body class='sc5 container '>
 <!-- preloader area start -->
@@ -116,7 +94,7 @@
                                 <a href="../cmp/about.html">بلاگ</a>
                             </li>
                             <li>
-                                <a href="#galleryPic"> گالری تصاویر</a>
+                                <a href="../cmp/gallery.html"> گالری تصاویر</a>
                             </li>
                             <li>
                                 <a href="../cmp/contact.html">ارتباط با ما</a>
@@ -154,21 +132,26 @@
         </swiper-slide>
     </swiper-container>
 </section>
+
 <section>
-    <div class="w-100 d-flex justify-content-center">
-<div class="box_video_branchs">
-        <video src="../assets/video/akbar.mp4" width="100%" height="100%" controls muted></video>
+    <div class="box_History">
+        <div class="flex_row_column_mobile">
+            <div class="box_History_Items flex-center">
+                <img src="../assets/img/akbarSari.jpg" alt="">
+            </div>
+            <div class="box_History_Items">
+                <video src="../assets/video/akbar.mp4" width="100%" height="100%" controls muted></video>
+            </div>
+        </div>
     </div>
-    </div>
-    
 </section>
 
 <section class="map_box">
     <span  class=" text_title_boxes"> شعبه ساری اکبر جوجه</span>
     <div id="map"></div>
-     
-    <button class="btn_map" onclick="maptosari()">مسیر یابی</button>
+    <button class="btn btn-base btn_map" onclick="maptosari()">مسیر یابی</button>
 </section>
+
 
 <!-- footer -->
 
@@ -180,7 +163,9 @@
                     <img src="../assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                 </div>
                 <div class="box_detail_footer flex-center">
-                    <span class="textJustify" style="width: 90% ; color: black"> اکبر واقع در اکبر دره که بود: اکبر پسری از محله ی اکبر دره بود ک واقع در دره ای به نام اکبر بود ... اکبر ب این دلیل همیشه در دره های اکبر دره بود. از اونجا شد اکبر اکبر دره در اکبری در دره ی خویش </span>
+                    <span class="textJustify" style="width: 90% ; color: black">
+                    آقای کلبادی که به حاج اکبر معروف بود، به دلیل استقبال بسیار زیاد مشتریانش علاوه بر عرضه ی صبحانه شروع به پخت چلو جوجه و چلو تخم مرغ نیز کردند. دیگر به نظر می رسد که به قسمت های هیجان انگیز این ماجرا نزدیک شدیم زیرا، از همان زمان بود که نام حاج اکبر با جوجه های خوشمزه اش پیوند خورد.
+                    </span>
                 </div>
             </div>
         </section>
