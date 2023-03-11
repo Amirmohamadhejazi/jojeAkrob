@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
+    <link rel="stylesheet" href="../assets/css/leaflet.css"/>
+    <link rel="stylesheet" href="../assets/js/leaflet.js"/>
     <meta charset="UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GhaemShahr</title>
+    <title>Ghaem Shahr</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <link rel="icon" href="../assets/img/fevicon.png">
     <link rel="stylesheet" href="../assets/css/animate.min.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -24,6 +28,45 @@
     <link href="../assets/font/css2.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<style>
+    #map {
+        height: 20rem;
+        margin: 14px;
+        border-radius: 10px
+
+    }
+    .leaflet-control-zoom , .leaflet-control-attribution{
+        display: none;
+    }
+
+    .map_box {
+        margin: 0 0 10rem 0;
+        text-align: right;
+        padding: 40px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .leaflet-pane{
+        z-index: 0;
+    }
+    @media only screen and (max-width: 992px) {
+        .map_box {
+            text-align: center;
+            /*width: 95%;*/
+            padding: 0;
+        }
+    }
+    .btn_map{
+        width: 300px;
+        height: 50px;
+        border: 0;
+        border-radius: 10px;
+        background-color: #bdbdbd;
+        box-shadow: 7px 7px 18px #d0d0d0,-7px -7px 18px #f0f0f0;
+    }
+</style>
 <body class='sc5 container '>
 <!-- preloader area start -->
 <div class="preloader" id="preloader">
@@ -40,14 +83,6 @@
 
 <!-- search popup area start -->
 <div class="body-overlay" id="body-overlay"></div>
-<!--    <div class="td-search-popup" id="td-search-popup">-->
-<!--        <form action="https://themefie.com/html/foodka/index.html" class="search-form">-->
-<!--            <div class="form-group">-->
-<!--                <input type="text" class="form-control" placeholder="Search.....">-->
-<!--            </div>-->
-<!--            <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>-->
-<!--        </form>-->
-<!--    </div>-->
 <div class=" navHeader">
     <div class="navbar-area container ">
         <nav class="navbar navbar-expand-lg bg_nav">
@@ -69,15 +104,14 @@
                                 <a href="../index.html">اکبر جوجه</a>
                             </li>
                             <li class="current-menu-item menu-item-has-children">
-                                <a href="#">شعب اکبر جوجه</a>
+                                <a href="./cmp/branches.html" onclick="gotoBranches()">شعب اکبر جوجه</a>
+
                                 <ul class="sub-menu ps-0" style="text-align: right;">
                                     <li><a href="../cmp/tehran.html">اکبر جوجه تهران</a></li>
                                     <li><a href="../cmp/sari.html">اکبر جوجه ساری</a></li>
-                                    <li><a href="../cmp/ghaemshahr.html">اکبر جوجه قائم‌شهر</a></li>
+                                    <li><a href="#">اکبر جوجه قائم‌شهر</a></li>
                                 </ul>
                             </li>
-
-
                             <li>
                                 <a href="../cmp/about.html">بلاگ</a>
                             </li>
@@ -89,14 +123,13 @@
                             </li>
                         </ul>
                     </div>
-                    <!--                    <a class="search" href="#"><i class="ri-search-line"></i></a></li>-->
                 </div>
 
             </div>
         </nav>
     </div>
 </div>
-<!-- Slider main container -->
+
 <section>
     <swiper-container class="mySwiper"  navigation="true" space-between="30" dir="ltr" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false"  >
         <swiper-slide class="w-100">
@@ -121,145 +154,21 @@
         </swiper-slide>
     </swiper-container>
 </section>
-
-
 <section>
-    <div class="box_History">
-        <span class="text-right text_title_boxes">تاریخچه اکبر جوجه</span>
-        <div class="flex_row_column_mobile">
-            <div class="box_History_Items flex-center">
-                <span class="textJustify" style="width: 90%"> اکبر واقع در اکبر دره که بود: اکبر پسری از محله ی اکبر دره بود ک واقع در دره ای به نام اکبر بود ... اکبر ب این دلیل همیشه در دره های اکبر دره بود. از اونجا بود که اکبر همیشه در ماه های اکبر نژاد نگاه میکرد و اسم او را هم به دلیل شباهت صورتش به ماه انتخاب کردن .. از اونجا شد اکبر اکبر دره در اکبری در دره ی خویش ... تا داستانی دیگر بد رود __</span>
-            </div>
-            <div class="box_History_Items">
-                <video src="../assets/video/akbar.mp4" width="100%" height="100%" controls muted></video>
-            </div>
-        </div>
+    <div class="w-100 d-flex justify-content-center">
+<div class="box_video_branchs">
+        <video src="../assets/video/akbar.mp4" width="100%" height="100%" controls muted></video>
     </div>
+    </div>
+    
 </section>
 
-<section>
-    <div class="box_Branch">
-        <span  class="text-right text_title_boxes">شبعات اصلی اکبر جوجه</span>
-        <div class="w-100 flex_row_column_mobile text-white">
-
-            <div class="box_Branch_Items flex-center position-relative">
-                <img src="../assets/img/akbarghaemshahr.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                <span class="textBranches">شعبه قائم شهر</span>
-            </div>
-
-            <div class="box_Branch_Items flex-center position-relative">
-                <img src="../assets/img/akbarSari.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                <span class="textBranches">شعبه ساری</span>
-            </div>
-
-            <div class="box_Branch_Items flex-center position-relative">
-                <img src="../assets/img/akbarTeh.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                <span class="textBranches">شعبه تهران</span>
-            </div>
-        </div>
-    </div>
+<section class="map_box">
+    <span  class=" text_title_boxes"> شعبه قائم شهر اکبر جوجه</span>
+    <div id="map"></div>
+     
+    <button class="btn_map" onclick="maptoGhaemShahr()">مسیر یابی</button>
 </section>
-<section>
-    <div class="possibilities_box">
-        <span  class="text-right text_title_boxes">مزایای اکبر جوجه</span>
-        <div class="flex_row_column_mobile flex-center text-center">
-            <div class="flex-column">
-                <div class="possibilities_box_Items flex-center position-relative">
-                    <img src="../assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                </div>
-                <span>غذایی سالم و با کیفیت</span>
-            </div>
-            <div class="flex-column">
-                <div class="possibilities_box_Items flex-center position-relative">
-                    <img src="../assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                </div>
-                <span>طبخ متفاوت جوجه</span>
-            </div>
-            <div class="flex-column">
-                <div class="possibilities_box_Items flex-center position-relative">
-                    <img src="../assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                </div>
-                <span>قدمت زیاد</span>
-            </div>
-            <div class="flex-column">
-                <div class="possibilities_box_Items flex-center position-relative">
-                    <img src="../assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                </div>
-                <span>قیمت منصفانه</span>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="honors_box">
-        <span  class="text-right text_title_boxes">تالار افتخارات اکبر جوجه</span>
-        <div class="flex_row_column_mobile flex-center text-center">
-            <div class="honors_box_Item1 flex-center text-right">
-                <span class="textJustify" style="width: 90%">تالار همیشه جزوی از افتخارات اکبر دره بود و از آنجایی که وی اکبر جوجه را زد نامش در جامعه ی ایران و ایرانی پخش و فیمس شد</span>
-            </div>
-            <div class="honors_box_Item2 flex-center">
-                <img src="../assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-            </div>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="gallery_comments_box">
-        <span class="text-right text_title_boxes">نظرات کاربران</span>
-        <div class="flex_row_column_mobile flex-center text-center">
-            <div class="flex-column d-flex align-items-center">
-                <div class="gallery_comments_box_Items flex-center position-relative">
-                    <img src="../assets/img/manProf1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                </div>
-                <span>ایول</span>
-            </div>
-            <div class="flex-column d-flex align-items-center">
-                <div class="gallery_comments_box_Items flex-center position-relative">
-                    <img src="../assets/img/manProf2.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                </div>
-                <span>آقا عالی</span>
-            </div>
-            <div class="flex-column d-flex align-items-center">
-                <div class="gallery_comments_box_Items flex-center position-relative">
-                    <img src="../assets/img/manProf3.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                </div>
-                <span>خوبه</span>
-            </div>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="gallery_comments_box" id="galleryPic">
-        <span  class="text-right text_title_boxes">گالری تصاویر</span>
-        <div class="flex_row_column_mobile flex-center text-center">
-            <div class="d-flex justify-content-center">
-                <div class="gallery_comments_box_Items flex-center position-relative">
-                    <img src="../assets/img/gallery1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="gallery_comments_box_Items flex-center position-relative">
-                    <img src="../assets/img/gallery2.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="gallery_comments_box_Items flex-center position-relative">
-                    <img src="../assets/img/gallery3.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="gallery_comments_box_Items flex-center position-relative">
-                    <img src="../assets/img/gallery4.png" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
 
 <!-- footer -->
 
@@ -285,37 +194,41 @@
             </div>
         </section>
         <section>
-
             <div class="d-flex footer_Branch_Box">
                 <span class="text-center">لیست شبعات اصلی</span>
                 <div class="w-100 flex_row_column_mobile text-white flex-wrap">
-                    <div class="footer_Branch_Items flex-center position-relative">
-                        <img src="../assets/img/akbarghaemshahr.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                        <span class="textBranches">شعبه قائم شهر</span>
-                    </div>
-
-                    <div class="footer_Branch_Items flex-center position-relative">
-                        <img src="../assets/img/akbarSari.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                        <span class="textBranches">شعبه ساری</span>
-                    </div>
-
-                    <div class="footer_Branch_Items flex-center position-relative">
-                        <img src="../assets/img/akbarTeh.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                        <span class="textBranches">شعبه تهران</span>
-                    </div>
+                    <a href="#">
+                        <div class="footer_Branch_Items flex-center position-relative">
+                            <img src="../assets/img/akbarghaemshahr.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <span class="textBranches">شعبه قائم شهر</span>
+                        </div>
+                    </a>
+                    <a href="../cmp/sari.html">
+                        <div class="footer_Branch_Items flex-center position-relative">
+                            <img src="../assets/img/akbarSari.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <span class="textBranches">شعبه ساری</span>
+                        </div>
+                    </a>
+                    <a href="../cmp/tehran.html">
+                        <div class="footer_Branch_Items flex-center position-relative">
+                            <img src="../assets/img/akbarTeh.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <span class="textBranches">شعبه تهران</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
 
     </div>
 </section>
-<div class="back-to-top">
-    <span class="back-top"><i class="fas fa-angle-double-up"></i></span>
-</div>
+    <div class="back-to-top">
+        <span class="back-top"><i class="fas fa-angle-double-up"></i></span>
+    </div>
+</body>
 
 
-
-<!-- all plugins here -->
+<!-- <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+<script src="../assets/js/popper.min.js" ></script> -->
 <script src="../assets/js/jquery.3.6.min.js"></script>
 <script src="../assets/js/bootstrap.min.js"></script>
 <script src="../assets/js/imageloded.min.js"></script>
@@ -331,29 +244,23 @@
 <script src="../assets/js/wow.min.js"></script>
 <script src="../assets/js/tweenmax.min.js"></script>
 <script src="../assets/js/swiper-element-bundle.min.js"></script>
-<!-- main js  -->
 <script src="../assets/js/main.js"></script>
-
-<!-- Swiper JS -->
 <script src="../assets/js/swiper-bundle.min.js"></script>
 <script>
-    var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-</script>
-</body>
 
+    let map
+    let marker;
+
+    map = L.map('map').setView([36.560245, 53.076542], 13)
+    
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+    }).addTo(map);
+
+    function maptoGhaemShahr() {
+        map.flyTo([36.468658 , 52.847734 ]);
+        marker = L.marker([36.468658 , 52.847734 ]).addTo(map)
+    }
+
+</script>
 </html>

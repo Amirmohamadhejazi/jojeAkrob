@@ -11,6 +11,9 @@ body{
     box-shadow: 7px 7px 18px #d0d0d0,
     -7px -7px 18px #f0f0f0;
 }
+.leaflet-pane {
+    z-index: 0;
+}
 .cursor_pointer {
     cursor: pointer;
 }
@@ -121,7 +124,7 @@ li:hover {
 .box_History {
     margin: 20px;
 }
- 
+
 .box_History_Items {
     margin: 20px 10px 0 10px;
     width: 500px;
@@ -246,6 +249,17 @@ li:hover {
 .container{
     padding: 0!important;
 }
+
+.box_video_branchs{
+    /* margin-top: ; */
+    margin: 7rem 10px 5rem 10px;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 7px 7px 18px #d0d0d0 !important
+
+ }
 @media only screen and (max-width: 992px) {
     .text_title_boxes {
         font-size: 24px;

@@ -96,7 +96,6 @@
                                 <a href="../index.html">اکبر جوجه</a>
                             </li>
                             <li class="current-menu-item menu-item-has-children">
-<!--                                <a href="../cmp/branches.html" onclick="gotoBranches()">شعب اکبر جوجه</a>-->
                                 <a href="./cmp/branches.html" onclick="gotoBranches()">شعب اکبر جوجه</a>
 
                                 <ul class="sub-menu ps-0" style="text-align: right;">
@@ -125,7 +124,7 @@
 
 
 <section class="map_box">
-    <span  class=" text_title_boxes"> شعبه اصلی اکبر جوجه</span>
+    <span  class=" text_title_boxes"> شبعات اصلی اکبر جوجه</span>
     <div id="map"></div>
 </section>
 
@@ -156,20 +155,24 @@
             <div class="d-flex footer_Branch_Box">
                 <span class="text-center">لیست شبعات اصلی</span>
                 <div class="w-100 flex_row_column_mobile text-white flex-wrap">
-                    <div class="footer_Branch_Items flex-center position-relative">
-                        <img src="../assets/img/akbarghaemshahr.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                        <span class="textBranches">شعبه قائم شهر</span>
-                    </div>
-
-                    <div class="footer_Branch_Items flex-center position-relative">
-                        <img src="../assets/img/akbarSari.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                        <span class="textBranches">شعبه ساری</span>
-                    </div>
-
-                    <div class="footer_Branch_Items flex-center position-relative">
-                        <img src="../assets/img/akbarTeh.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
-                        <span class="textBranches">شعبه تهران</span>
-                    </div>
+                    <a href="../cmp/ghaemshahr.html">
+                        <div class="footer_Branch_Items flex-center position-relative">
+                            <img src="../assets/img/akbarghaemshahr.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <span class="textBranches">شعبه قائم شهر</span>
+                        </div>
+                    </a>
+                    <a href="../cmp/sari.html">
+                        <div class="footer_Branch_Items flex-center position-relative">
+                            <img src="../assets/img/akbarSari.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <span class="textBranches">شعبه ساری</span>
+                        </div>
+                    </a>
+                    <a href="../cmp/tehran.html">
+                        <div class="footer_Branch_Items flex-center position-relative">
+                            <img src="../assets/img/akbarTeh.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <span class="textBranches">شعبه تهران</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -203,18 +206,15 @@
 <script src="../assets/js/main.js"></script>
 <script src="../assets/js/swiper-bundle.min.js"></script>
 <script>
-    // const iconLoc = L.icon({
-    //     iconUrl: './pic/icon.png',
-    //     iconSize: [60, 60],
-    //     iconAnchor: [15, 15]
-    // });
     let map
     let marker;
 
-    map = L.map('map').setView([36.560245, 53.076542], 13)
-    marker = L.marker([36.560245, 53.076542]).addTo(map);
+    map = L.map('map').setView([35.643905 , 51.350613], 7)
+    marker = L.marker([35.643905 , 51.350613]).addTo(map);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
     }).addTo(map);
+    L.marker([36.468658 , 52.847734 ]).addTo(map)
+    L.marker([36.566398 , 53.059328 ]).addTo(map)
 </script>
 </html>

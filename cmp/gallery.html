@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <link rel="stylesheet" href="../assets/css/leaflet.css"/>
+        <link rel="stylesheet" href="../assets/js/leaflet.js"/>
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Gallery</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+        <link rel="icon" href="../assets/img/fevicon.png">
+        <link rel="stylesheet" href="../assets/css/animate.min.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/magnific.min.css">
+        <link rel="stylesheet" href="../assets/css/jquery-ui.min.css">
+        <link rel="stylesheet" href="../assets/css/nice-select.min.css">
+        <link rel="stylesheet" href="../assets/css/owl.min.css">
+        <link rel="stylesheet" href="../assets/css/slick-slide.min.css">
+        <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+        <link rel="stylesheet" href="../assets/css/remixicon/remixicon.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/custom.css">
+        <link rel="stylesheet" href="../assets/css/responsive.css">
+        <link rel="stylesheet" href="../assets/font/css/font.css">
+        <link rel="stylesheet" href="../assets/font/css/fontStyle.css">
+        <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css"/>
+        <link href="../assets/font/css2.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body class='sc5 container'>
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div id="wave1">
+            </div>
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+    <!-- search popup area start -->
+    <div class="body-overlay" id="body-overlay"></div>
+
+    <div class=" navHeader">
+        <div class="navbar-area container ">
+            <nav class="navbar navbar-expand-lg bg_nav">
+                <div class="responsive-mobile-menu">
+                    <button class="menu toggle-btn d-block d-lg-none" data-target="#themefie_main_menu"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-left"></span>
+                        <span class="icon-right"></span>
+                    </button>
+                </div>
+                <div class="d-flex align-items-center nav-container margin_mobile_logo">
+                    <div class="d-flex flex-row ">
+                        <div class="logo">
+                            <a class="main-logo " href="#"><img src="../assets/img/logoAkbar.png" alt="img"></a>
+                        </div>
+                        <div class="collapse navbar-collapse " id="themefie_main_menu">
+                            <ul class="navbar-nav menu-open">
+                                <li>
+                                    <a href="../index.html">اکبر جوجه</a>
+                                </li>
+                                <li class="current-menu-item menu-item-has-children">
+                                    <a href="./cmp/branches.html" onclick="gotoBranches()">شعب اکبر جوجه</a>
+    
+                                    <ul class="sub-menu ps-0" style="text-align: right;">
+                                        <li><a href="../cmp/tehran.html">اکبر جوجه تهران</a></li>
+                                        <li><a href="#">اکبر جوجه ساری</a></li>
+                                        <li><a href="../cmp/ghaemshahr.html">اکبر جوجه قائم‌شهر</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../cmp/about.html">بلاگ</a>
+                                </li>
+                                <li>
+                                    <a href="#galleryPic"> گالری تصاویر</a>
+                                </li>
+                                <li>
+                                    <a href="../cmp/contact.html">ارتباط با ما</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="td-search-popup" id="td-search-popup">
+        <form action="https://themefie.com/html/foodka/index.html" class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search.....">
+            </div>
+            <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <!-- //. search Popup -->
+
+    <!-- blog Area Start-->
+    <section class="blog-area pd-top-120 pd-bottom-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6">
+                            <div class="single-blog-wrap">
+                                <div class="thumb">
+                                    <img src="../assets/img/blog/1.png" alt="img">
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="single-blog-wrap">
+                                <div class="thumb">
+                                    <img src="../assets/img/blog/2.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="single-blog-wrap">
+                                <div class="thumb">
+                                    <img src="../assets/img/blog/3.png" alt="img">
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="single-blog-wrap">
+                                <div class="thumb">
+                                    <img src="../assets/img/blog/4.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="single-blog-wrap">
+                                <div class="thumb">
+                                    <img src="../assets/img/blog/5.png" alt="img">
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="single-blog-wrap">
+                                <div class="thumb">
+                                    <img src="../assets/img/blog/6.png" alt="img">
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+    <!-- blog Area End -->
+
+    
+<!-- footer -->
+
+<section>
+    <div class="footer text-white">
+        <section>
+            <div class="box_logo_detail_footer">
+                <div class="logo-footer flex-center">
+                    <img src="../assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                </div>
+                <div class="box_detail_footer flex-center">
+                    <span class="textJustify" style="width: 90% ; color: black"> اکبر واقع در اکبر دره که بود: اکبر پسری از محله ی اکبر دره بود ک واقع در دره ای به نام اکبر بود ... اکبر ب این دلیل همیشه در دره های اکبر دره بود. از اونجا شد اکبر اکبر دره در اکبری در دره ی خویش </span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="link_footer ">
+                <span>لینک های مفید</span>
+                <span class="cursor_pointer">لینک</span>
+                <span class="cursor_pointer">لینک</span>
+                <span class="cursor_pointer">لینک</span>
+                <span class="cursor_pointer">لینک</span>
+            </div>
+        </section>
+        <section>
+            <div class="d-flex footer_Branch_Box">
+                <span class="text-center">لیست شبعات اصلی</span>
+                <div class="w-100 flex_row_column_mobile text-white flex-wrap">
+                    <a href="../cmp/ghaemshahr.html">
+                        <div class="footer_Branch_Items flex-center position-relative">
+                            <img src="../assets/img/akbarghaemshahr.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <span class="textBranches">شعبه قائم شهر</span>
+                        </div>
+                    </a>
+                    <a href="../cmp/sari.html">
+                        <div class="footer_Branch_Items flex-center position-relative">
+                            <img src="../assets/img/akbarSari.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <span class="textBranches">شعبه ساری</span>
+                        </div>
+                    </a>
+                    <a href="../cmp/tehran.html">
+                        <div class="footer_Branch_Items flex-center position-relative">
+                            <img src="../assets/img/akbarTeh.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <span class="textBranches">شعبه تهران</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</section>
+
+    <div class="back-to-top">
+        <span class="back-top"><i class="fas fa-angle-double-up"></i></span>
+    </div>
+
+    
+    <script src="../assets/js/jquery.3.6.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/imageloded.min.js"></script>
+    <script src="../assets/js/counterup.js"></script>
+    <script src="../assets/js/waypoint.js"></script>
+    <script src="../assets/js/magnific.min.js"></script>
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <script src="../assets/js/jquery-ui.min.js"></script>
+    <script src="../assets/js/nice-select.min.js"></script>
+    <script src="../assets/js/fontawesome.min.js"></script>
+    <script src="../assets/js/owl.min.js"></script>
+    <script src="../assets/js/slick-slider.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/tweenmax.min.js"></script>
+    <script src="../assets/js/swiper-element-bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+</body>
+
+<!-- Mirrored from themefie.com/html/foodka/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Mar 2023 06:18:37 GMT -->
+</html>
