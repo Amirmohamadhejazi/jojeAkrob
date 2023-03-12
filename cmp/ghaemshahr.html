@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css"/>
+    <script src="../assets/js/swiper-bundle.min.js"></script>
     <title>Ghaem Shahr Akbar Joje</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
@@ -21,7 +23,6 @@
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/font/css/font.css">
     <link rel="stylesheet" href="../assets/font/css/fontStyle.css">
-    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css"/>
     <link href="../assets/font/css2.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -32,8 +33,6 @@
         border-radius: 10px
 
     }
-
-
 </style>
 <body class='sc5 container '>
 <!-- preloader area start -->
@@ -81,13 +80,16 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="../cmp/about.html">بلاگ</a>
+                                <a href="../cmp/blog.html">بلاگ</a>
                             </li>
                             <li>
                                 <a href="../cmp/gallery.html"> گالری تصاویر</a>
                             </li>
                             <li>
                                 <a href="../cmp/contact.html">ارتباط با ما</a>
+                            </li>
+                            <li>
+                                <a href="../cmp/about.html">درباره ما</a>
                             </li>
                         </ul>
                     </div>
@@ -99,28 +101,33 @@
 </div>
 
 <section>
-    <swiper-container class="mySwiper"  navigation="true" space-between="30" dir="ltr" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false"  >
-        <swiper-slide class="w-100">
-            <div class="imgSlider">
-                <img src="../assets/img/slider1.jpg" class="img_100" alt="chik1">
+    <div class="swiper w-100">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgSlider">
+                    <img src="../assets/img/slider1.jpg" class="img_100" alt="chik1">
+                </div>
             </div>
-        </swiper-slide>
-        <swiper-slide>
-            <div class="imgSlider">
-                <img src="../assets/img/chicken1.jpg" class="img_100" alt="chik1">
+            <div class="swiper-slide">
+                <div class="imgSlider">
+                    <img src="../assets/img/chicken1.jpg" class="img_100" alt="chik1">
+                </div>
             </div>
-        </swiper-slide>
-        <swiper-slide>
-            <div class="imgSlider">
-                <img src="../assets/img/chicken2.jpg" class="img_100" alt="chik2">
+            <div class="swiper-slide">
+                <div class="imgSlider">
+                    <img src="../assets/img/chicken2.jpg" class="img_100" alt="chik1">
+                </div>
             </div>
-        </swiper-slide>
-        <swiper-slide>
-            <div class="imgSlider">
-                <img src="../assets/img/chicken3.jpg" class="img_100" alt="chik3">
+            <div class="swiper-slide">
+                <div class="imgSlider">
+                    <img src="../assets/img/chicken3.jpg" class="img_100" alt="chik1">
+                </div>
             </div>
-        </swiper-slide>
-    </swiper-container>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
 </section>
 
 
@@ -128,7 +135,7 @@
     <div class="box_History">
         <div class="flex_row_column_mobile">
             <div class="box_History_Items flex-center">
-                <img src="../assets/img/akbarghaemshahr.jpg" alt="">
+                <img src="../assets/img/akbarghaemshahr.jpg"  class="img_100" alt="">
             </div>
             <div class="box_History_Items">
                 <video src="../assets/video/akbar.mp4" width="100%" height="100%" controls muted></video>
@@ -152,7 +159,7 @@
         <section>
             <div class="box_logo_detail_footer">
                 <div class="logo-footer flex-center">
-                    <img src="../assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    <img src="../assets/img/akbar-vektor.png"  class="img_100" alt="">
                 </div>
                 <div class="box_detail_footer flex-center">
                     <span class="textJustify">امروزه رستورانهای زنجیره‌ای اکبر جوجه در استان‌ های مختلف ایران شعبه دارند و بیشترین شعبه‌ها در استان مازندران و گلستان واقع شده‌اند و همگی دارای لوگوی هماهنگ، با ذکر نام اکبر جوجه و برادران کلبادی، هستند.</span>
@@ -174,19 +181,19 @@
                 <div class="w-100 flex_row_column_mobile text-white flex-wrap">
                     <a href="#">
                         <div class="footer_Branch_Items flex-center position-relative">
-                            <img src="../assets/img/akbarghaemshahr.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <img src="../assets/img/akbarghaemshahr.jpg" class="img_100"  alt="">
                             <span class="textBranches">شعبه قائم شهر</span>
                         </div>
                     </a>
                     <a href="../cmp/sari.html">
                         <div class="footer_Branch_Items flex-center position-relative">
-                            <img src="../assets/img/akbarSari.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <img src="../assets/img/akbarSari.jpg" class="img_100"  alt="">
                             <span class="textBranches">شعبه ساری</span>
                         </div>
                     </a>
                     <a href="../cmp/tehran.html">
                         <div class="footer_Branch_Items flex-center position-relative">
-                            <img src="../assets/img/akbarTeh.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <img src="../assets/img/akbarTeh.jpg" class="img_100"  alt="">
                             <span class="textBranches">شعبه تهران</span>
                         </div>
                     </a>

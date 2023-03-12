@@ -327,17 +327,21 @@ function gotoBranches(e){
 
 
 const swiper = new Swiper('.swiper', {
-    direction: 'horizontal',
-    loop: true,
-    pagination: {
+     slidesPerView: 1,
+     centeredSlides: true,
+     spaceBetween: 30,
+    loop:true,
+     loopedSlides:1,
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false
+    // },
+     pagination: {
         el: '.swiper-pagination',
-    },
-
+         type: 'fraction',
+     },
     navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    },
-    scrollbar: {
-        el: '.swiper-scrollbar',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
     });

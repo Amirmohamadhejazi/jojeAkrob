@@ -4,151 +4,120 @@
 <!-- Mirrored from themefie.com/html/foodka/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Mar 2023 06:18:32 GMT -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FoodKa - Food Ordering, Delivery & Restuarent Template</title>
-    <!--fivicon icon-->
-    <link rel="icon" href="assets/img/fevicon.png">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/magnific.min.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
-    <link rel="stylesheet" href="assets/css/nice-select.min.css">
-    <link rel="stylesheet" href="assets/css/owl.min.css">
-    <link rel="stylesheet" href="assets/css/slick-slide.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/remixicon/remixicon.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&amp;family=Bebas+Neue&amp;family=Satisfy&amp;family=Quattrocento:wght@400;700&amp;display=swap" rel="stylesheet">
-
-
+    <title>Sari</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <link rel="icon" href="../assets/img/fevicon.png">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/magnific.min.css">
+    <link rel="stylesheet" href="../assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../assets/css/nice-select.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.min.css">
+    <link rel="stylesheet" href="../assets/css/slick-slide.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/css/remixicon/remixicon.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/font/css/font.css">
+    <link rel="stylesheet" href="../assets/font/css/fontStyle.css">
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css"/>
+    <link href="../assets/font/css2.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body class='sc5'>
-    <!-- preloader area start -->
-    <div class="preloader" id="preloader">
-        <div class="preloader-inner">
-            <div id="wave1">
-            </div>
-            <div class="spinner">
-                <div class="dot1"></div>
-                <div class="dot2"></div>
-            </div>
+<body class='sc5 container'>
+
+<!-- preloader area start -->
+<div class="preloader" id="preloader">
+    <div class="preloader-inner">
+        <div id="wave1">
+        </div>
+        <div class="spinner">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
         </div>
     </div>
-    <!-- preloader area end -->
-    <!-- search popup area start -->
-    <div class="body-overlay" id="body-overlay"></div>
-    <div class="td-search-popup" id="td-search-popup">
-        <form action="https://themefie.com/html/foodka/index.html" class="search-form">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search.....">
+</div>
+<div class=" navHeader">
+    <div class="navbar-area container ">
+        <nav class="navbar navbar-expand-lg bg_nav">
+            <div class="responsive-mobile-menu">
+                <button class="menu toggle-btn d-block d-lg-none" data-target="#themefie_main_menu"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-left"></span>
+                    <span class="icon-right"></span>
+                </button>
             </div>
-            <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
-        </form>
-    </div>
-    <!-- //. search Popup -->
+            <div class="d-flex align-items-center nav-container margin_mobile_logo">
+                <div class="d-flex flex-row ">
+                    <div class="logo">
+                        <a class="main-logo " href="#"><img src="../assets/img/logoAkbar.png" alt="img"></a>
+                    </div>
+                    <div class="collapse navbar-collapse " id="themefie_main_menu">
+                        <ul class="navbar-nav menu-open">
+                            <li>
+                                <a href="../index.html">اکبر جوجه</a>
+                            </li>
+                            <li class="current-menu-item menu-item-has-children">
+                                <a href="../cmp/branches.html" onclick="gotoBranches()">شعب اکبر جوجه</a>
 
-    <!-- navbar start -->
-    <header class="navbar-area">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container nav-container">
-                <div class="responsive-mobile-menu">
-                    <button class="menu toggle-btn d-block d-lg-none" data-target="#themefie_main_menu" 
-                    aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-left"></span>
-                        <span class="icon-right"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="themefie_main_menu">
-                    <ul class="navbar-nav menu-open">
-                        <li class="current-menu-item menu-item-has-children">
-                            <a href="home-1.html">HOME</a>
-                            <ul class="sub-menu ps-0">
-                                <li><a href="home-1.html">Home 01</a></li>
-                                <li><a href="home-2.html">Home 02</a></li>
-                                <li><a href="home-3.html">Home 03</a></li>
-                            </ul>
-                        </li>
-                        <li class="current-menu-item menu-item-has-children">
-                            <a href="#">PAGES</a>
-                            <ul class="sub-menu ps-0">
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                                <li><a href="menu.html">Menu</a></li>
-                                <li><a href="menu-list.html">Menu List</a></li>
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="single-product.html">Shop Details</a></li>
-                                <li><a href="cart.html">Cart</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="about.html">ABOUT US</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">CONTACTS</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="logo">
-                    <a class="main-logo" href="home-1.html"><img src="assets/img/logo.png" alt="img"></a>
-                </div>
-                <div class="nav-right-part nav-right-part-mobile">
-                    <ul>
-                        <li><a class="search" href="#"><i class="ri-search-line"></i></a>
-                        </li>
-                        <li class="phone-contact d-md-block d-none"><i class="ri-phone-fill float-start"></i>
-                            +997 509 153 849
-                        </li>
-                        <li class="menu-cart"><a href="cart.html">CART <span>1</span></a></li>
-                        <li>49.50 $</li>
-                    </ul>
-                </div>
-                <div class="nav-right-part nav-right-part-desktop">                    
-                    <ul>
-                        <li><a class="search" href="#"><i class="ri-search-line"></i></a>
-                        </li>
-                        <li class="phone-contact"><i class="ri-phone-fill float-start"></i>
-                            +997 509 153 849
-                        </li>
-                        <li class="menu-cart"><a href="cart.html">CART <span>1</span></a></li>
-                        <li>49.50 $</li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- navbar end -->
-
-    <!-- bredcrumb Area Start-->
-    <section class="breadcrumb-area">
-        <div class="banner-bg-img"></div>
-        <div class="banner-shape-1"><img src="assets/img/banner/shape-1.png" alt="img"></div>
-        <div class="banner-shape-2"><img src="assets/img/banner/shape-2.png" alt="img"></div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 align-self-center">
-                    <div class="banner-inner text-center">
-                        <h3>About us
-                        </h3>
-                        <h1>Who are we?</h1>
-                        <nav aria-label="breadcrumb">
-                            <ul class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="home-1.html">Home</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">About</li>
-                            </ul>
-                        </nav>
+                                <ul class="sub-menu ps-0" style="text-align: right;">
+                                    <li><a href="../cmp/tehran.html">اکبر جوجه تهران</a></li>
+                                    <li><a href="../cmp/sari.html">اکبر جوجه ساری</a></li>
+                                    <li><a href="../cmp/ghaemshahr.html">اکبر جوجه قائم‌شهر</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../cmp/blog.html">بلاگ</a>
+                            </li>
+                            <li>
+                                <a href="../cmp/gallery.html"> گالری تصاویر</a>
+                            </li>
+                            <li>
+                                <a href="../cmp/contact.html">ارتباط با ما</a>
+                            </li>
+                            <li>
+                                <a href="../cmp/contact.html">ارتباط با ما</a>
+                            </li>
+                            <li>
+                                <a href="../cmp/about.html">درباره ما</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+
             </div>
-        </div>
-    </section>
+        </nav>
+    </div>
+</div>
+    <!-- //. search Popup -->
+
+    <!-- bredcrumb Area Start-->
+<!--    <section class="breadcrumb-area">-->
+<!--        <div class="banner-bg-img"></div>-->
+<!--        <div class="banner-shape-1"><img src="assets/img/banner/shape-1.png" alt="img"></div>-->
+<!--        <div class="banner-shape-2"><img src="assets/img/banner/shape-2.png" alt="img"></div>-->
+<!--        <div class="container">-->
+<!--            <div class="row justify-content-center">-->
+<!--                <div class="col-lg-6 align-self-center">-->
+<!--                    <div class="banner-inner text-center">-->
+<!--                        <h3>About us-->
+<!--                        </h3>-->
+<!--                        <h1>Who are we?</h1>-->
+<!--                        <nav aria-label="breadcrumb">-->
+<!--                            <ul class="breadcrumb">-->
+<!--                              <li class="breadcrumb-item"><a href="home-1.html">Home</a></li>-->
+<!--                              <li class="breadcrumb-item active" aria-current="page">About</li>-->
+<!--                            </ul>-->
+<!--                        </nav>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
     <!-- bredcrumb Area End --> 
 
     <!-- about Area Start-->
@@ -156,8 +125,10 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-sm-8">
-                    <div class="thumb mb-4 mb-lg-0">
-                        <img src="assets/img/other/about-2.png" alt="img">
+                    <div class="thumb parent_about_icon_akbar mb-4 mb-lg-0">
+                        <div class="about_icon_akbar flex-center position-relative">
+                            <img src="../assets/img/akbar-vektor.png" class="img_100"  alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-first align-self-center">
@@ -356,127 +327,87 @@
     </section>
     <!-- blog Area End -->
 
-    <!-- footer area start -->
-    <footer class="footer-area pd-top-100">
-        <div class="footer-inner padding-top-100 padding-bottom-65">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="footer-widget widget">
-                            <div class="logo">
-                                <img src="assets/img/logo.png" alt="img">
-                            </div>
-                            <ul class="contact_info_list">
-                                <li class="single-info-item">
-                                    <img src="assets/img/icon/location.png" alt="icon">
-                                    <div class="details">
-                                        4920 Trails End Road Ft  United States, FL 33311
-                                    </div>
-                                </li>
-                                <li class="single-info-item">
-                                    <img src="assets/img/icon/envelope.png" alt="icon">
-                                    <div class="details">
-                                        ordernow@foodka.com
-                                    </div>
-                                </li>
-                                <li class="single-info-item">
-                                    <img src="assets/img/icon/phone.png" alt="icon">
-                                    <div class="details">
-                                        +997 509 153 849
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="footer-widget widget widget_link">
-                            <h4 class="widget-title">Hot Menu</h4>
-                            <ul>
-                                <li><a href="menu-list.html">Burger King Whopper</a></li>
-                                <li><a href="menu-list.html">Five Guys Cheeseburger</a></li>
-                                <li><a href="menu-list.html">KFC Original Recipe Chicken</a></li>
-                                <li><a href="menu-list.html">Wendy's Frosty</a></li>
-                                <li><a href="menu-list.html">McDonald's Happy Meal</a></li>
-                                <li><a href="menu-list.html">Domino's Pepperoni Pizza</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="footer-widget widget widget_link">
-                            <h4 class="widget-title">Opening Hours</h4>
-                            <ul>
-                                <li>Monday : 09.00am-10.00pm</li>
-                                <li>Tuesday : 09.00am-10.00pm</li>
-                                <li>Wednesday : 09.00am-10.00pm</li>
-                                <li>Thursday : 09.00am-10.00pm</li>
-                                <li>Friday  : 09.00am-10.00pm</li>
-                                <li>Saturday & Sunday : <span>Closed</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="footer-widget widget widget_instagram_feeds">
-                            <h4 class="widget-title">Instagram Feeds</h4>
-                            <ul>
-                                <li><a href="#"><img src="assets/img/instagram/1.png" alt="instagram" /></a></li>
-                                <li><a href="#"><img src="assets/img/instagram/2.png" alt="instagram" /></a></li>
-                                <li><a href="#"><img src="assets/img/instagram/3.png" alt="instagram" /></a></li>
-                                <li><a href="#"><img src="assets/img/instagram/4.png" alt="instagram" /></a></li>
-                                <li><a href="#"><img src="assets/img/instagram/5.png" alt="instagram" /></a></li>
-                                <li><a href="#"><img src="assets/img/instagram/6.png" alt="instagram" /></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-md-start text-center">
-                        <div class="copyright-area">
-                            <p>© 2021 Foodka. All Rights Reserved by Themefie</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="social-area text-md-end text-center mt-md-0 mt-2">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> 
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li> 
-                            <li><a href="#"><i class="fab fa-behance"></i></a></li> 
-                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li> 
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer area end -->    
 
-    <!-- back-to-top end -->
-    <div class="back-to-top">
-        <span class="back-top"><i class="fas fa-angle-double-up"></i></span>
+<!-- footer -->
+
+<section>
+    <div class="footer text-white">
+        <section>
+            <div class="box_logo_detail_footer">
+                <div class="logo-footer flex-center">
+                    <img src="../assets/img/akbar-vektor.png" class="img_100"  alt="">
+                </div>
+                <div class="box_detail_footer flex-center">
+                    <span class="textJustify">امروزه رستورانهای زنجیره‌ای اکبر جوجه در استان‌ های مختلف ایران شعبه دارند و بیشترین شعبه‌ها در استان مازندران و گلستان واقع شده‌اند و همگی دارای لوگوی هماهنگ، با ذکر نام اکبر جوجه و برادران کلبادی، هستند.</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="link_footer ">
+                <span>لینک های مفید</span>
+                <span class="cursor_pointer">لینک</span>
+                <span class="cursor_pointer">لینک</span>
+                <span class="cursor_pointer">لینک</span>
+                <span class="cursor_pointer">لینک</span>
+            </div>
+        </section>
+        <section>
+            <div class="d-flex footer_Branch_Box">
+                <span class="text-center">لیست شبعات اصلی</span>
+                <div class="w-100 flex_row_column_mobile text-white flex-wrap">
+
+                    <a href="../cmp/ghaemshahr.html">
+                        <div class="footer_Branch_Items flex-center position-relative">
+                            <img src="../assets/img/akbarghaemshahr.jpg" class="img_100"  alt="">
+                            <span class="textBranches">شعبه قائم شهر</span>
+                        </div>
+                    </a>
+                    <a href="../cmp/sari.html">
+                        <div class="footer_Branch_Items flex-center position-relative">
+                            <img src="../assets/img/akbarSari.jpg" class="img_100"  alt="">
+                            <span class="textBranches">شعبه ساری</span>
+                        </div>
+                    </a>
+                    <a href="../cmp/tehran.html">
+                        <div class="footer_Branch_Items flex-center position-relative">
+                            <img src="../assets/img/akbarTeh.jpg" class="img_100"  alt="">
+                            <span class="textBranches">شعبه تهران</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </div>
+</section>
+<div class="back-to-top">
+    <span class="back-top"><i class="fas fa-angle-double-up"></i></span>
+</div>
 
-    
-
-    <!-- all plugins here -->
-    <script src="assets/js/jquery.3.6.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/imageloded.min.js"></script>
-    <script src="assets/js/counterup.js"></script>
-    <script src="assets/js/waypoint.js"></script>
-    <script src="assets/js/magnific.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/jquery-ui.min.js"></script>
-    <script src="assets/js/nice-select.min.js"></script>
-    <script src="assets/js/fontawesome.min.js"></script>
-    <script src="assets/js/owl.min.js"></script>
-    <script src="assets/js/slick-slider.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/tweenmax.min.js"></script>
-    <!-- main js  -->
-    <script src="assets/js/main.js"></script>
 </body>
+
+
+
+    <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../assets/js/popper.min.js" ></script>
+    <script src="../assets/js/jquery.3.6.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/imageloded.min.js"></script>
+    <script src="../assets/js/counterup.js"></script>
+    <script src="../assets/js/waypoint.js"></script>
+    <script src="../assets/js/magnific.min.js"></script>
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <script src="../assets/js/jquery-ui.min.js"></script>
+    <script src="../assets/js/nice-select.min.js"></script>
+    <script src="../assets/js/fontawesome.min.js"></script>
+    <script src="../assets/js/owl.min.js"></script>
+    <script src="../assets/js/slick-slider.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/tweenmax.min.js"></script>
+    <script src="../assets/js/swiper-element-bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+
 
 <!-- Mirrored from themefie.com/html/foodka/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Mar 2023 06:18:32 GMT -->
 </html>
