@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-    <link rel="stylesheet" href="../assets/css/leaflet.css"/>
-    <link rel="stylesheet" href="../assets/js/leaflet.js"/>
     <meta charset="UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -35,26 +33,8 @@
         border-radius: 10px
 
     }
-    .leaflet-control-zoom , .leaflet-control-attribution{
-        display: none;
-    }
-
     .map_box {
-        margin: 12rem 0 12rem 0;
-        text-align: right;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .leaflet-pane{
-        z-index: 0;
-    }
-    @media only screen and (max-width: 992px) {
-        .map_box {
-            text-align: center;
-            padding: 0;
-        }
+        margin: 5rem 0 0 0;
     }
 </style>
 <body class='sc5 container '>
@@ -124,6 +104,30 @@
 <section class="map_box">
     <span  class=" text_title_boxes"> شبعات اصلی اکبر جوجه</span>
     <div id="map"></div>
+    <div class="w-100 flex-column ">
+        <div class="d-flex flex-column p-1">
+            <span style="font-weight: bold;">شعبه ساری</span>
+            <span class="mt-1">شماره تماس: 01133345345</span>
+            <span class="mt-1 ">آدرس: مازندران، ساری، کمربندی غربی، جنب پمپ بنزین مفیدی</span>
+
+        </div>
+        <div class="d-flex flex-column mt-3">
+            <span style="font-weight: bold;">شعبه قائم‌ شهر</span>
+            <span class="mt-1">شماره تماس: 01122247556</span>
+            <span class="mt-1 ">آدرس: مازندران، قائمشهر، کمربندی فیروزکوه به تهران</span>
+            <!-- ۶۶۷۵۴۴۸۹-۹۰ -->
+            
+        </div>
+        <div class="d-flex flex-column  mt-3">
+            <span style="font-weight: bold;">شعبه تهران</span>
+            <span class="mt-1">شماره تماس: 66754489/90</span>
+            <span class="mt-1 ">آدرس: تهران، خیابان انقلاب، بعد از چهار راه ولیعصر،ابتدای پل کالج، نرسیده به خ خارک</span>
+            
+        </div>
+    </div>
+</section>
+<section>
+    
 </section>
 
 <!-- footer -->
@@ -136,9 +140,7 @@
                     <img src="../assets/img/akbar-vektor.png" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                 </div>
                 <div class="box_detail_footer flex-center">
-                    <span class="textJustify" style="width: 90% ; color: black">
-                    آقای کلبادی که به حاج اکبر معروف بود، به دلیل استقبال بسیار زیاد مشتریانش علاوه بر عرضه ی صبحانه شروع به پخت چلو جوجه و چلو تخم مرغ نیز کردند. دیگر به نظر می رسد که به قسمت های هیجان انگیز این ماجرا نزدیک شدیم زیرا، از همان زمان بود که نام حاج اکبر با جوجه های خوشمزه اش پیوند خورد.
-                    </span>
+                    <span class="textJustify">امروزه رستورانهای زنجیره‌ای اکبر جوجه در استان‌ های مختلف ایران شعبه دارند و بیشترین شعبه‌ها در استان مازندران و گلستان واقع شده‌اند و همگی دارای لوگوی هماهنگ، با ذکر نام اکبر جوجه و برادران کلبادی، هستند.</span>
                 </div>
             </div>
         </section>

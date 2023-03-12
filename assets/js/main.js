@@ -314,7 +314,7 @@
 })(jQuery);
 
 
-
+// custom
 
 function homeToBranches(){
 
@@ -324,3 +324,20 @@ function homeToBranches(){
 function gotoBranches(e){
     window.location.href = "./branches.html";
 }
+
+
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    });
