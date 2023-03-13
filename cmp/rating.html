@@ -2,9 +2,9 @@
 <html lang="zxx">
 <head>
     <meta charset="UTF-8">
-
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact</title>
+    <title>Rating</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <link rel="icon" href="../assets/img/fevicon.png">
@@ -26,18 +26,8 @@
     <link href="../assets/font/css2.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<style>
-    #map {
-        height: 20rem;
-        margin: 14px;
-        border-radius: 10px
+<body class='sc5 container'>
 
-    }
-    .map_box {
-        margin: 5rem 0 0 0;
-    }
-</style>
-<body class='sc5 container '>
 <!-- preloader area start -->
 <div class="preloader" id="preloader">
     <div class="preloader-inner">
@@ -49,10 +39,6 @@
         </div>
     </div>
 </div>
-<!-- preloader area end -->
-
-<!-- search popup area start -->
-<div class="body-overlay" id="body-overlay"></div>
 <div class=" navHeader">
     <div class="navbar-area container ">
         <nav class="navbar navbar-expand-lg bg_nav">
@@ -74,7 +60,7 @@
                                 <a href="../index.html">اکبر جوجه</a>
                             </li>
                             <li class="current-menu-item menu-item-has-children">
-                                <a href="./cmp/branches.html" onclick="gotoBranches()">شعب اکبر جوجه</a>
+                                <a href="../cmp/branches.html" onclick="gotoBranches()">شعب اکبر جوجه</a>
 
                                 <ul class="sub-menu ps-0" style="text-align: right;">
                                     <li><a href="../cmp/tehran.html">اکبر جوجه تهران</a></li>
@@ -89,7 +75,7 @@
                                 <a href="../cmp/gallery.html"> گالری تصاویر</a>
                             </li>
                             <li>
-                                <a href="#" class="selected_menu">ارتباط با ما</a>
+                                <a href="../cmp/contact.html">ارتباط با ما</a>
                             </li>
                             <li>
                                 <a href="../cmp/about.html">درباره ما</a>
@@ -104,36 +90,11 @@
 </div>
 
 
-<section class="map_box">
-    <span  class=" text_title_boxes"> شبعات اصلی اکبر جوجه</span>
-    <div id="map"></div>
-    <div class="w-100 flex-column ">
-        <div class="d-flex flex-column p-1">
-            <span style="font-weight: bold;">شعبه ساری</span>
-            <span class="mt-1">شماره تماس: 01133345345</span>
-            <span class="mt-1 ">آدرس: مازندران، ساری، کمربندی غربی، جنب پمپ بنزین مفیدی</span>
-
-        </div>
-        <div class="d-flex flex-column mt-3">
-            <span style="font-weight: bold;">شعبه قائم‌ شهر</span>
-            <span class="mt-1">شماره تماس: 01122247556</span>
-            <span class="mt-1 ">آدرس: مازندران، قائمشهر، کمربندی فیروزکوه به تهران</span>
-            <!-- ۶۶۷۵۴۴۸۹-۹۰ -->
-            
-        </div>
-        <div class="d-flex flex-column  mt-3">
-            <span style="font-weight: bold;">شعبه تهران</span>
-            <span class="mt-1">شماره تماس: 66754489/90</span>
-            <span class="mt-1 ">آدرس: تهران، خیابان انقلاب، بعد از چهار راه ولیعصر،ابتدای پل کالج، نرسیده به خ خارک</span>
-        </div>
-    </div>
+<section style="margin-top: 8rem;">
+    <span class="text_title_boxes">نظر سنجی</span>
+    <form id="quizForm"></form>
 </section>
-<section>
-    
-</section>
-
 <!-- footer -->
-
 <section>
     <div class="footer text-white">
         <section>
@@ -180,45 +141,206 @@
                 </div>
             </div>
         </section>
-
     </div>
 </section>
 <div class="back-to-top">
     <span class="back-top"><i class="fas fa-angle-double-up"></i></span>
 </div>
 
+
+
 </body>
 
 
-<script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
-<script src="../assets/js/popper.min.js" ></script>
-<script src="../assets/js/jquery.3.6.min.js"></script>
-<script src="../assets/js/bootstrap.min.js"></script>
-<script src="../assets/js/imageloded.min.js"></script>
-<script src="../assets/js/counterup.js"></script>
-<script src="../assets/js/waypoint.js"></script>
-<script src="../assets/js/magnific.min.js"></script>
-<script src="../assets/js/isotope.pkgd.min.js"></script>
-<script src="../assets/js/jquery-ui.min.js"></script>
-<script src="../assets/js/nice-select.min.js"></script>
-<script src="../assets/js/fontawesome.min.js"></script>
-<script src="../assets/js/owl.min.js"></script>
-<script src="../assets/js/slick-slider.min.js"></script>
-<script src="../assets/js/wow.min.js"></script>
-<script src="../assets/js/tweenmax.min.js"></script>
-<script src="../assets/js/swiper-element-bundle.min.js"></script>
-<script src="../assets/js/main.js"></script>
-<script src="../assets/js/swiper-bundle.min.js"></script>
-<script>
-    let map
-    let marker;
 
-    map = L.map('map').setView([35.643905 , 51.350613], 7)
-    marker = L.marker([35.643905 , 51.350613]).addTo(map);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-    }).addTo(map);
-    L.marker([36.468658 , 52.847734 ]).addTo(map)
-    L.marker([36.566398 , 53.059328 ]).addTo(map)
-</script>
+    <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../assets/js/popper.min.js" ></script>
+    <script src="../assets/js/jquery.3.6.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/imageloded.min.js"></script>
+    <script src="../assets/js/counterup.js"></script>
+    <script src="../assets/js/waypoint.js"></script>
+    <script src="../assets/js/magnific.min.js"></script>
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <script src="../assets/js/jquery-ui.min.js"></script>
+    <script src="../assets/js/nice-select.min.js"></script>
+    <script src="../assets/js/fontawesome.min.js"></script>
+    <script src="../assets/js/owl.min.js"></script>
+    <script src="../assets/js/slick-slider.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/tweenmax.min.js"></script>
+    <script src="../assets/js/swiper-element-bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+
+
+    <script> 
+            
+const questions = [
+    {
+      id: 1,
+      title: 'چه مقدار از خدمات اکبر جوجه راضی هستید؟',
+      options: [
+        {
+          key: 1,
+          title: '1'
+        },
+        {
+          key: 2,
+          title: '2'
+        },
+        {
+          key: 3,
+          title: '3'
+        },
+        {
+          key: 4,
+          title: '4'
+        }
+      ],
+    },
+    {
+      id: 2,
+      title: 'به پاسخگویی پشتیبان چه نمره ای میدهید؟',
+      options: [
+        {
+          key: 1,
+          title: '1'
+        },
+        {
+          key: 2,
+          title: '2'
+        },
+        {
+          key: 3,
+          title: '3'
+        },
+        {
+          key: 4,
+          title: '4'
+        }
+      ],
+    },
+    {
+      id: 3,
+      title: 'چه مقدار از خدمات پرسنل ما راضی بودید؟',
+      options: [
+        {
+          key: 1,
+          title: '1'
+        },
+        {
+          key: 2,
+          title: '2'
+        },
+        {
+          key: 3,
+          title: '3'
+        },
+        {
+          key: 4,
+          title: '4'
+        }
+      ],
+    },
+    {
+      id: 4,
+      title: 'اگر میخواستید به صورت کلی به اکبر جوجه نمره دهید چه نمره ای میدادید؟',
+      options: [
+        {
+          key: 1,
+          title: '1'
+        },
+        {
+          key: 2,
+          title: '2'
+        },
+        {
+          key: 3,
+          title: '3'
+        },
+        {
+          key: 4,
+          title: '4'
+        }
+      ],
+    },
+  ];
+
+  document.querySelector("#quizForm").innerHTML = `<form id="quizForm">
+    ${
+     questions.map((item)=>
+     `
+     <div class="question flex-center text-center">
+        <div>
+            <span class="text_title_boxes titleQuiz">${item.title}</span>
+            <div class="choices flex-center">
+            <div class="choice">
+            <label for=${item.id}>${item.options[0].title}</label>
+            <input type="radio" name=${item.id} value="1" />
+            </div>
+            <div class="choice">
+            <label for=${item.id}">${item.options[1].title}</label>
+            <input type="radio" name=${item.id} value="2" />
+            </div>
+            <div class="choice">
+            <label for=${item.id}>${item.options[2].title}</label>
+            <input type="radio" name=${item.id} value="3" />
+            </div>
+            <div class="choice">
+            <label for=${item.id}>${item.options[3].title}</label>
+            <input type="radio" name=${item.id} value="4" />
+            </div>
+            </div>
+        </div>
+     </div> 
+     `
+   ).join(" ")
+    }
+    <div class="d-flex flex-center">
+        <button class="btn btn-base btn_rate mt-3" type="submit" >ارسال نظر</button>
+    </div>
+
+   </form>`
+
+   let form = document.querySelector("form");
+   form.addEventListener(
+  "submit",
+  (event) => {
+    event.preventDefault();
+    const data = new FormData(form);
+    let output = "";
+    for (const entry of data) {
+      output = `${output}${entry[1]}`;
+    }
+    console.log(output.split(""))
+
+//     myFunction()
+
+
+//   function myFunction( ) {
+//     let NumP = 0 
+
+//     return Answers.map((item , index)=>
+//       {
+//           switch(item) {
+//             case outputDataAnswers[index]:
+//               NumP = NumP + 1
+//               document.querySelector("#rightAnswers").innerHTML =  NumP
+//               console.log(true , item , outputDataAnswers[index]  ) 
+//               break;
+             
+//             default:
+//               console.log("Wrong" , item)
+//               break;
+//           }
+//       }
+//     )
+//   }
+
+  },
+  false
+);
+     </script>
+<!-- Mirrored from themefie.com/html/foodka/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Mar 2023 06:18:32 GMT -->
 </html>

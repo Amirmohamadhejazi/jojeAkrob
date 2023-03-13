@@ -1,3 +1,5 @@
+
+  
 (function($) {
    "use strict";
 
@@ -332,10 +334,10 @@ const swiper = new Swiper('.swiper', {
      spaceBetween: 30,
     loop:true,
      loopedSlides:1,
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+    },
      pagination: {
         el: '.swiper-pagination',
          type: 'fraction',
@@ -345,3 +347,5 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
     });
+
+
