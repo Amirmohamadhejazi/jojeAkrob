@@ -241,6 +241,15 @@ li:hover {
     height: 200px;
     border-radius: 10px;
 }
+.box_img_baner {
+    margin-top: 20px;
+    width: 100%;
+    height: 30rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 7px 7px 18px #d0d0d0,
+    -7px -7px 18px #f0f0f0;
+}
 .textBranches {
     font-size: 18px;
     position: absolute;
@@ -453,6 +462,8 @@ li:hover {
 .titleQuiz{
     font-size: 20px;
   }
+  .box_img_baner {
+    width: 95%;
 }
 
 @media only screen and (max-width: 575px) {
